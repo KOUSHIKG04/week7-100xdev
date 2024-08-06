@@ -1,0 +1,144 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #cff59c30;
+  margin: 0;
+}
+
+h1 {
+  font-family: cursive;
+  font-weight: 400;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.title-container {
+  background-color: #fff;
+  padding: 10px 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #333;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+.github-info-card {
+  border: 1px solid #fffbfb98;
+  border-radius: 16px;
+  padding: 20px;
+  width: 100%;
+  max-width: 350px;
+  text-align: center;
+  background: linear-gradient(135deg, #eee0b5a1, #61555dac);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.github-info-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.github-info-card .avatar {
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border: 3px solid #fff;
+  margin-bottom: 15px;
+}
+
+.github-info-card h2 {
+  margin: 10px 0;
+  color: #fff;
+  /* font-family: 'Comic Sans MS', cursive, sans-serif; */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+}
+
+.github-info-card p {
+  margin: 5px 0;
+  color: #fff;
+  /* font-family: 'Arial', sans-serif; */
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+.github-info-card a {
+  color: #333;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0;
+  font-size: 1.2rem;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+.github-info-card a svg {
+  margin-right: 5px;
+  color: #333;
+}
+
+.github-info-card a:hover {
+  color: #fff;
+}
+
+.github-info-card p:nth-child(5),
+.github-info-card p:nth-child(6),
+.github-info-card p:nth-child(7) {
+  color: #fff;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .github-info-card {
+    width: 80%;
+  }
+
+  .github-info-card .avatar {
+    width: 100px;
+    height: 100px;
+  }
+
+  .github-info-card h2 {
+    font-size: 1.2rem;
+  }
+
+  .github-info-card a {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .github-info-card {
+    width: 90%;
+  }
+
+  .github-info-card .avatar {
+    width: 80px;
+    height: 80px;
+  }
+
+  .github-info-card h2 {
+    font-size: 1rem;
+  }
+
+  .github-info-card a {
+    font-size: 0.9rem;
+  }
+}

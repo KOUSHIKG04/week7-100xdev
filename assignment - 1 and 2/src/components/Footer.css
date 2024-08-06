@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+.header-style {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  max-width: 600px;
+  margin: auto;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  margin-top: 40px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  font-weight: 600;
+}
+
+.header-style2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  width: 100%;
+  max-width: 240px;
+  height: 50px;
+  margin: auto;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  margin-top: 40px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  font-weight: 600;
+}
+
+.text-center {
+  text-align: center;
+  font-weight: 550;
+  font-size: 22px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 20px;
+}
+
+.btn-container-above {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 20px;
+  margin-top: 100px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 14px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+.btn:active {
+  transform: translateY(1px);
+}
+
+.red {
+  background-color: #ff4d4d;
+}
+
+.yellow {
+  background-color: #ffeb3b;
+  color: black;
+}
+
+.black {
+  background-color: #333333;
+}
+
+.purple {
+  background-color: #9c27b0;
+}
+
+.green {
+  background-color: #4caf50;
+}
+
+.blue {
+  background-color: #2196f3;
+}
+
+.default {
+  background-color: #ffffff;
+  color: #000000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .header-style, .header-style2 {
+    width: 90%;
+  }
+
+  .text-center {
+    font-size: 18px;
+  }
+
+  .btn-container, .btn-container-above {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .btn {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-style, .header-style2 {
+    width: 100%;
+  }
+
+  .text-center {
+    font-size: 16px;
+  }
+
+  .btn {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+}
