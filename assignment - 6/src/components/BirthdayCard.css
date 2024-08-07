@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+
+.birthday-card {
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #ffeb3b;
+    color: #333;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 300px;
+    box-sizing: border-box;
+}
+
+.birthday-card h3 {
+    margin-bottom: 10px;
+    font-family: 'Poppins', cursive;
+}
+
+.birthday-card p {
+    margin-bottom: 20px;
+    font-family: cursive;
+}
